@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h4>SHREYA PATEL</h4>
+<h4>180020107051</h4>
+
+<h1>BULB EXPERIMENT</h1>
+
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "C:\Users\Shreya\OneDrive\Desktop\New folder (2)\blue.jpg"
+  }else if (sw == 1){
+  	pic = "C:\Users\Shreya\OneDrive\Desktop\New folder (2)\yellow.jpg"
+   }else if (sw == 2){
+  	pic = "C:\Users\Shreya\OneDrive\Desktop\New folder (2)\GREEN.pnj"
+   }else{
+  	pic = "C:\Users\Shreya\OneDrive\Desktop\New folder (2)\red.jpg"
+   }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="C:\Users\Shreya\OneDrive\Desktop\New folder (2)\yellow.jpg" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Yellow Light On</button>
+<button type="button" onclick="light(3)">Red Light On</button>
+<button type="button" onclick="light(0)">Blue Light On</button>
+<button type="button" onclick="light(2)">Green Light On</button>
+</p>
+
+</body>
+</html>
